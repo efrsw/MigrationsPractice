@@ -4,5 +4,6 @@ public class Tags
 {
     [Key]
     public int Id { get; set; }
-    public IEnumerable<Post> Posts { get; set; }
+    public string Name { get; set; }
+    public List<Post> Posts { get; set; }
 }

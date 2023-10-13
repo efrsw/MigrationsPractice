@@ -8,11 +8,11 @@ public class BlogsContext : DbContext
 
     public BlogsContext()
     {
-        DbPath = @"C:\dev\cs\MigrationsPractice\blogs.db";
+        DbPath = @"Server=(localdb)\MSSQLLocalDB;Database=office_test;Trusted_Connection=True;MultipleActiveResultSets=true;Persist Security Info=False;";
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite($"Data Source={DbPath}");
+        optionsBuilder.UseSqlServer(DbPath);    
     }
 }
