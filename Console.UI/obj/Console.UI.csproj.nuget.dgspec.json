@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\cs\\MigrationsPractice\\Console.UI\\Console.UI.csproj": {}
+    "C:\\git\\MigrationsPractice\\Console.UI\\Console.UI.csproj": {}
   },
   "projects": {
-    "C:\\dev\\cs\\MigrationsPractice\\Console.UI\\Console.UI.csproj": {
+    "C:\\git\\MigrationsPractice\\Console.UI\\Console.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\cs\\MigrationsPractice\\Console.UI\\Console.UI.csproj",
+        "projectUniqueName": "C:\\git\\MigrationsPractice\\Console.UI\\Console.UI.csproj",
         "projectName": "Console.UI",
-        "projectPath": "C:\\dev\\cs\\MigrationsPractice\\Console.UI\\Console.UI.csproj",
-        "packagesPath": "C:\\Users\\e.fursov\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\cs\\MigrationsPractice\\Console.UI\\obj\\",
+        "projectPath": "C:\\git\\MigrationsPractice\\Console.UI\\Console.UI.csproj",
+        "packagesPath": "C:\\Users\\egorf\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\MigrationsPractice\\Console.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\e.fursov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\egorf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
