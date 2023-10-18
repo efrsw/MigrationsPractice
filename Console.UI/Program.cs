@@ -1,12 +1,22 @@
-﻿namespace Program;
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Program;
 
 public class Program
 {
     public static void Main(string[] args)
     {
         //PopulateData();
-        AddPostWithTag();
+        //AddPostWithTag();
+        var posts = QueryPosts();
+        System.Console.WriteLine(posts.Count);
+
+        foreach(var p in posts) 
+        {
+            System.Console.WriteLine(p.PostTags.Count);
+        }
     }
+
     public static void AddPostWithTag()
     {
         using var _db = new BlogsContext();
@@ -56,5 +66,13 @@ public class Program
         _db.Add(post2);
 
         _db.SaveChanges();
+    }
+
+    public static List<Post> QueryPosts()
+    {
+        using var _db = new BlogsContext();
+
+        var res = _db.Posts.Include(p => p.PostTags).ToList();
+        return res;
     }
 }
